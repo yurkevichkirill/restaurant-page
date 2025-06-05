@@ -1,5 +1,101 @@
-/* styles.css */
-body {
-    background-color: rebeccapurple;
-  }
-  
+@font-face{
+  font-family: "emigrate";
+  src:
+    url("fonts/emigrate-webfont.woff2") format("woff2"),
+    url("fonts/emigrate-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "lampu";
+  src:
+    url("fonts/lampu_merah-webfont.woff2") format("woff2"),
+    url("fonts/lampu_merah-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html{
+  height: 100%;
+}
+
+#content{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-areas: "header header header"
+                       "left-sidebar article right-sidebar"
+                       "footer footer footer";
+  gap: 5px;
+  height: 100%;
+}
+
+#content>div{
+  border: 1px solid black;
+}
+
+.header{
+  grid-area: header;
+  font-family: "emigrate";
+  font-size: 7em;
+  text-align: center;
+}
+
+.left-sidebar{
+  grid-area: left-sidebar;
+}
+
+.right-sidebar{
+  grid-area: right-sidebar;
+}
+
+.article{
+  grid-area: article;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.meals{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "meal-head meal-head meal-head"
+                       "burger nuggets fries";
+  padding: 5px;
+  gap: 5px;
+}
+
+.meals img{
+  width: 100%;
+  height: 90%;
+  background-color: rgb(243, 207, 141);
+  border-radius: 20px;
+}
+
+.meal-head{
+  grid-area: meal-head;
+  font-family: "emigrate";
+  font-size: 3em;
+  text-align: center;
+}
+
+.meals img~div{
+  font-family: "lampu";
+  font-size: 2em;
+  text-align: center;
+}
+
+.burger{
+  grid-area: burger;
+}
+
+.nuggets{
+  grid-area: nuggets;
+}
+
+.fries{
+  grid-area: fries;
+}
+
