@@ -46,6 +46,15 @@ nav > button{
   background-color: var(--main-bg-color);
 }
 
+nav > button:hover{
+  background-color:rgb(255, 238, 202);
+}
+
+.activeBtn{
+  background-color: rgb(255, 148, 148);
+  font-family:"lampu";
+}
+
 .header{
   grid-area: header;
   font-family: "emigrate";

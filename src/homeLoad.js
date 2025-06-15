@@ -2,8 +2,18 @@ import burgerImgUrl from "./imgs/burger.png";
 import nuggetsImgUrl from "./imgs/nuggets.png";
 import friesImgUrl from "./imgs/fries.png";
 
-function createJS(){
+function createHome(){
+    const homeBtn = document.querySelector(".homeBtn");
+    homeBtn.classList.add("activeBtn");
+
+    const menuBtn = document.querySelector(".menuBtn");
+    menuBtn.classList.remove("activeBtn");
+
+    const reserveBtn = document.querySelector(".reserveBtn");
+    reserveBtn.classList.remove("activeBtn");
+
     const content = document.getElementById("content");
+    content.innerHTML = '';
 
     const header = document.createElement("div");
     header.className = "header";
@@ -139,4 +149,4 @@ function createJS(){
     hours.appendChild(schedule);    
 }
 
-export {createJS};
+export {createHome};

@@ -1,4 +1,22 @@
 import "./styles.css";
-import {createJS} from "./jsLoad.js"
+import { createHome } from "./homeLoad.js"
+import { createMenu } from "./menuLoad.js";
+import { createReserve } from "./reserveLoad.js";
 
-createJS();
+const homeBtn = document.querySelector(".homeBtn");
+const menuBtn = document.querySelector(".menuBtn");
+const reserveBtn = document.querySelector(".reserveBtn");
+
+createHome();
+
+homeBtn.addEventListener("click", () => {
+    createHome();
+});
+
+menuBtn.addEventListener("click", () => {
+    createMenu();
+});
+
+reserveBtn.addEventListener("click", () => {
+    createReserve();
+});
