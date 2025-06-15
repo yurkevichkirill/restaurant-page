@@ -16,8 +16,13 @@
   font-style: normal;
 }
 
+:root{
+  --main-bg-color: rgb(243, 207, 141);
+}
+
 body, html{
   height: 100%;
+  background-color: rgb(255, 238, 202);
 }
 
 #content{
@@ -34,6 +39,12 @@ body, html{
 /* #content>div{
   border: 1px solid black;
 } */
+
+nav > button{
+  font-size: 2em;
+  border-radius: 0;
+  background-color: var(--main-bg-color);
+}
 
 .header{
   grid-area: header;
@@ -56,7 +67,6 @@ body, html{
   display: flex;
   flex-direction: column;
   gap: 3em;
-  background-color: rgb(255, 238, 202);
 }
 
 .footer{
@@ -99,8 +109,12 @@ body, html{
 .meals img{
   width: 100%;
   height: 90%;
-  background-color: rgb(243, 207, 141);
+  background-color: var(--main-bg-color);
   border-radius: 20px;
+}
+
+.meals img:hover{
+  background-color: rgb(255, 148, 148);
 }
 
 .meal-head, .about-head{
@@ -130,7 +144,7 @@ body, html{
 
 .text-about{
   padding: 1em;
-  background-color: rgb(243, 207, 141);
+  background-color: var(--main-bg-color);
   border-radius: 10px;
   font-size: 2em;
   font-family: "lampu"
