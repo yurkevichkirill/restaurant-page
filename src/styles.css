@@ -31,15 +31,16 @@ body, html{
   height: 100%;
 }
 
-#content>div{
+/* #content>div{
   border: 1px solid black;
-}
+} */
 
 .header{
   grid-area: header;
   font-family: "emigrate";
-  font-size: 7em;
+  font-size: 5em;
   text-align: center;
+  
 }
 
 .left-sidebar{
@@ -52,10 +53,38 @@ body, html{
 
 .article{
   grid-area: article;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-color: rgb(255, 238, 202);
 }
 
 .footer{
   grid-area: footer;
+  display: flex;
+  padding: 2em 3em 2em 3em;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-head{
+  font-family: "emigrate";
+}
+
+.foot-head .name{
+  text-align: center;
+  font-family: "emigrate";
+  font-size: 2em;
+}
+
+.hours{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hours-head{
+  font-family: "emigrate";
 }
 
 .meals{
@@ -74,7 +103,7 @@ body, html{
   border-radius: 20px;
 }
 
-.meal-head{
+.meal-head, .about-head{
   grid-area: meal-head;
   font-family: "emigrate";
   font-size: 3em;
@@ -97,5 +126,13 @@ body, html{
 
 .fries{
   grid-area: fries;
+}
+
+.text-about{
+  padding: 1em;
+  background-color: rgb(243, 207, 141);
+  border-radius: 10px;
+  font-size: 2em;
+  font-family: "lampu"
 }
 
