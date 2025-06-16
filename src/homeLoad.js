@@ -17,7 +17,7 @@ function createHome(){
 
     const header = document.createElement("div");
     header.className = "header";
-    header.textContent = "Welcome to our Bear Restaurant";
+    header.textContent = "Welcome to our FastFoood Restaurant";
     content.appendChild(header);
 
     const left_sidebar = document.createElement("div");
@@ -131,7 +131,7 @@ function createHome(){
 
     const name = document.createElement("div");
     name.className = "name";
-    name.textContent = "Bear Restaurant";
+    name.textContent = "FastFood Restaurant";
     foot_head.appendChild(name);
 
     const hours = document.createElement("div");

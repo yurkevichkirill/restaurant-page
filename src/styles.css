@@ -18,6 +18,7 @@
 
 :root{
   --main-bg-color: rgb(243, 207, 141);
+  --main-hover-color: rgb(255, 148, 148);
 }
 
 body, html{
@@ -51,7 +52,7 @@ nav > button:hover{
 }
 
 .activeBtn{
-  background-color: rgb(255, 148, 148);
+  background-color: var(--main-hover-color);
   font-family:"lampu";
 }
 
@@ -123,7 +124,7 @@ nav > button:hover{
 }
 
 .meals img:hover{
-  background-color: rgb(255, 148, 148);
+  background-color: var(--main-hover-color);
 }
 
 .meal-head, .about-head{
@@ -159,3 +160,34 @@ nav > button:hover{
   font-family: "lampu"
 }
 
+.article-menu{
+  border: 4px solid var(--main-bg-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+.menu-head{
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 3em;
+}
+
+.burger-menu, .snack-menu, .drink-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-item{
+  font-family: "lampu";
+  font-size: 2em;
+}
+
+.menu-item:hover{
+  color: var(--main-hover-color);
+}
