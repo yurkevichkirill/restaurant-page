@@ -7,7 +7,7 @@ const homeBtn = document.querySelector(".homeBtn");
 const menuBtn = document.querySelector(".menuBtn");
 const reserveBtn = document.querySelector(".reserveBtn");
 
-createMenu();
+createHome();
 
 homeBtn.addEventListener("click", () => {
     createHome();

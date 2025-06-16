@@ -86,7 +86,7 @@ function createHome(){
 
     const text_about = document.createElement("div");
     text_about.className = "text-about";
-    text_about.textContent = "Nestled in the heart of Grove Street 69, our restaurant is a cozy den for food lovers with a taste for adventure. Inspired by the mighty bear—a symbol of strength, warmth, and hearty appetites—we serve up delicious, satisfying meals that’ll make you growl for more!";
+    text_about.textContent = "A fast food restaurant is a quick-service eatery offering affordable, convenient, and ready-to-eat meals. Popular for burgers, fries, nuggets, cola, and wings, these restaurants focus on speedy preparation and takeout/drive-thru options. Known for their casual vibe, consistent flavors, and value deals!";
     about.appendChild(text_about);
 
     const rigth_sidebar = document.createElement("div");
@@ -108,7 +108,7 @@ function createHome(){
 
     const address = document.createElement("div");
     address.className = "address";
-    address.innerHTML = "69-Grove Street<br>Madrid, Spain";
+    address.innerHTML = "69-Grove Street<br>Texas, USA";
     contact.appendChild(address);
     
     const mail = document.createElement("div");
